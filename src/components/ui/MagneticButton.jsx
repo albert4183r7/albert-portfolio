@@ -36,12 +36,12 @@ const MagneticButton = ({ children, href, onClick, className = "", variant = "pr
   }
 
   return (
-    <a 
-      ref={btnRef} 
-      href={href} 
-      onMouseMove={handleMouseMove} 
-      onMouseLeave={handleMouseLeave} 
-      style={{ transform: `translate(${pos.x}px, ${pos.y}px)` }} 
+    <a
+      href={href}
+      ref={btnRef}
+      onMouseMove={handleMouseMove}
+      onMouseLeave={handleMouseLeave}
+      style={{ transform: `translate(${pos.x}px, ${pos.y}px)` }}
       className={`${baseStyles} ${variants[variant]} ${className}`}
     >
       {children}
