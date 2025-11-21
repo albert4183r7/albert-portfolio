@@ -1,7 +1,7 @@
 import React from 'react';
 import { CONTENT } from '../../utils/content';
 
-const MarqueeRow = ({ items, direction = 'normal', speed = '30s' }) => (
+const MarqueeRow = ({ items, direction = 'normal', speed = '40s' }) => (
   <div className="relative flex w-full overflow-hidden py-6">
     {/* Fade Masks */}
     <div className="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-[#050508] to-transparent z-10 pointer-events-none"></div>
@@ -40,14 +40,10 @@ const Skills = () => {
       </div>
 
       <div className="space-y-4">
-        {/* Row 1: Languages - Faster (25s) */}
-        <MarqueeRow items={CONTENT.skills.languages} direction="normal" speed="25s" /> 
-        
-        {/* Row 2: Cloud - Slower (45s) */}
-        <MarqueeRow items={CONTENT.skills.cloud} direction="reverse" speed="45s" />
-        
-        {/* Row 3: Tools - Medium (35s) */}
-        <MarqueeRow items={CONTENT.skills.tools} direction="normal" speed="35s" />
+        {/* All rows same speed as requested */}
+        <MarqueeRow items={CONTENT.skills.languages} direction="normal" speed="30s" /> 
+        <MarqueeRow items={CONTENT.skills.cloud} direction="reverse" speed="30s" />
+        <MarqueeRow items={CONTENT.skills.tools} direction="normal" speed="40s" />
       </div>
     </section>
   );

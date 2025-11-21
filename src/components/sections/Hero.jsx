@@ -7,7 +7,7 @@ import MagneticButton from '../ui/MagneticButton';
 
 const Hero = () => {
   const offset = useParallax(25);
-  const headline = useTypewriter("I Transform \nProblems into\nReliable Solutions.", 35, 200);
+  const headline = useTypewriter(" Aspiring Cloud & Backend\nEngineer.", 35, 200);
 
   return (
     <section className="relative min-h-screen flex items-center pt-20 overflow-hidden">
@@ -29,9 +29,8 @@ const Hero = () => {
             <span className="animate-pulse text-blue-500">_</span>
           </h1>
           
-          {/* Updated Copy: Value-Driven but Grounded */}
           <p className="text-lg text-zinc-400 max-w-lg leading-relaxed border-l-2 border-blue-500/50 pl-6">
-            I focus on building practical, efficient, and secure IT systems. From responsive web applications to optimized cloud configurations, I deliver work that is clean, maintainable, and impactful.
+            I am skilled in the MERN stack and Python, with a strong foundation in cloud technologies, particularly Google Cloud Platform (GCP). I am also proficient in Mandarin (HSK5 & TOCFL B2).
           </p>
           
           <div className="flex flex-wrap gap-4 pt-4">
@@ -54,7 +53,7 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* Expanded Profile Picture Area */}
+        {/* Profile Picture Area */}
         <div className="relative flex justify-center perspective-[1000px]">
            <div 
              className="relative w-[350px] h-[350px] md:w-[550px] md:h-[550px] transition-transform duration-75 ease-linear"
@@ -65,10 +64,9 @@ const Hero = () => {
               
               <div className="absolute inset-[10%] bg-zinc-900/80 backdrop-blur-xl rounded-full border border-white/10 flex items-center justify-center shadow-2xl shadow-blue-500/10">
                  <div className="relative w-64 h-64 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-white/5 group">
-                   {/* Placeholder for your actual photo */}
                    <img 
                      src="/my-photo.jpg"
-                     alt="Profile" 
+                     alt="Albert" 
                      className="w-full h-full object-cover opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700"
                    />
                  </div>
