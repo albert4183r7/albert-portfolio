@@ -126,7 +126,7 @@ export const CONTENT = {
       tech: ["React", "Java", "AWS EC2", "AWS RDS", "AWS S3", "AWS Route 53"],
       gradient: "/projects-images/AWS-Cloud.png",
       link: "https://github.com/albert4183r7/Cloud-Based-Student-Data-Management-System"
-      demo: "a video, remove the audio"
+      demo: "/projects-demo/video-demo.mp4, please remove the audio"
     }
   ]
 };
