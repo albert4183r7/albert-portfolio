@@ -9,8 +9,8 @@ const Certifications = () => {
     <section id="certifications" className="py-32 bg-gradient-to-b from-zinc-900/50 to-transparent border-y border-white/5 backdrop-blur-sm">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold text-white mb-4">Professional Certifications</h2>
-          <p className="text-zinc-400">Validated expertise by industry leaders.</p>
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">Certifications</h2>
+          <p className="text-zinc-400 max-w-2xl mx-auto text-lg">Validated expertise by industry leaders.</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

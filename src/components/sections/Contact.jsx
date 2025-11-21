@@ -20,7 +20,7 @@ const Contact = () => {
           Ready to <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-500">Launch?</span>
         </h2>
         <p className="text-xl text-zinc-400 mb-12">
-          I am currently open to full-time opportunities. If you need a reliable engineer who speaks fluent full-stack, I'm ready to deploy.
+          I am currently open to full-time opportunities. If you need a software engineer who speaks fluent full-stack, I'm ready to deploy.
         </p>
         
         <div className="flex flex-col sm:flex-row items-center justify-center gap-6">

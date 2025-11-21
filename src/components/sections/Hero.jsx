@@ -7,7 +7,7 @@ import MagneticButton from '../ui/MagneticButton';
 
 const Hero = () => {
   const offset = useParallax(25);
-  const headline = useTypewriter("I Transform Complex\nProblems into\nReliable Solutions.", 35, 200);
+  const headline = useTypewriter("I Transform \nProblems into\nReliable Solutions.", 35, 200);
 
   return (
     <section className="relative min-h-screen flex items-center pt-20 overflow-hidden">
@@ -67,7 +67,7 @@ const Hero = () => {
                  <div className="relative w-64 h-64 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-white/5 group">
                    {/* Placeholder for your actual photo */}
                    <img 
-                     src="https://placehold.co/800x800/0f172a/ffffff?text=A" 
+                     src="/my-photo.jpg"
                      alt="Profile" 
                      className="w-full h-full object-cover opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700"
                    />

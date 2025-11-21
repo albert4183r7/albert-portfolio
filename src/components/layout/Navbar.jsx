@@ -7,8 +7,8 @@ const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   
   const navLinks = [
-    { name: 'Projects', id: '#projects' },
     { name: 'Skills', id: '#skills' },
+    { name: 'Projects', id: '#projects' },
     { name: 'Certifications', id: '#certifications' },
     { name: 'Contact', id: '#contact' }
   ];

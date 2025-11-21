@@ -6,19 +6,18 @@ export const CONTENT = {
   location: "Medan, Indonesia",
   availability: "Open to Work",
   email: "albertlie8338@gmail.com",
-  cvLink: "/Albert_CV.pdf", // Assumes file is in public/ folder
+  cvLink: "/Albert_CV.pdf",
   social: {
     github: "https://github.com/albert4183r7",
     linkedin: "https://linkedin.com/in/a-albert"
   },
   // RE-STRUCTURED SKILLS with SVG URLs
   skills: {
-    // Row 1: Languages & Frameworks (Faster Speed)
+    // Row 1: Languages & Frameworks
     languages: [
       { name: "Python", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
       { name: "JavaScript", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
       { name: "TypeScript", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" },
-      { name: "C++", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" },
       { name: "React", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
       { name: "Tailwind CSS", url: "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg" },
       { name: "HTML5", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" },
@@ -29,9 +28,10 @@ export const CONTENT = {
       { name: "Google Cloud", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" },
       { name: "AWS", url: "https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" },
       { name: "Oracle Cloud", url: "https://upload.wikimedia.org/wikipedia/commons/5/50/Oracle_logo.svg" },
-      { name: "Alibaba Cloud", url: "https://img.icons8.com/color/48/alibaba-cloud.png" },
-      { name: "Firebase", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" },
+      { name: "Alibaba Cloud", url: "https://s.yimg.com/zb/imgv1/57bdc457-6fc9-3b30-ba29-d0ee1cf76490/t_500x300" },
+      { name: "Huawei Cloud", url: "https://tse2.mm.bing.net/th/id/OIP.UUDTJPbOHaNmAoM4A6M1agHaHg?pid=Api&P=0&h=220" },
       { name: "Vercel", url: "https://assets.vercel.com/image/upload/v1588805858/repositories/vercel/logo.png" },
+      { name: "Render", url: "https://images.seeklogo.com/logo-png/53/1/render-logo-png_seeklogo-532232.png" },
     ],
     // Row 3: Tools & Databases
     tools: [
@@ -40,11 +40,12 @@ export const CONTENT = {
       { name: "Terraform", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg" },
       { name: "Jenkins", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg" },
       { name: "Git", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
+      { name: "GitHub", url: "https://tse4.mm.bing.net/th/id/OIP.-bzossAUdF_YFDw4LPNcfwHaHa?pid=Api&P=0&h=220"},
       { name: "VS Code", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" },
       { name: "PostgreSQL", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" },
       { name: "MySQL", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" },
       { name: "MongoDB", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" },
-      { name: "Supabase", url: "https://seeklogo.com/images/S/supabase-logo-DCC676FFE2-seeklogo.com.png" },
+      { name: "Supabase", url: "https://tse2.mm.bing.net/th/id/OIP.wiWMLZ1gAGJiE-7QvueH0gHaFj?pid=Api&P=0&h=220" },
       { name: "Postman", url: "https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" },
     ]
   },
@@ -53,68 +54,79 @@ export const CONTENT = {
       name: "Oracle Cloud Infrastructure 2025 Multicloud Certified Professional", 
       date: "Oct 2025", 
       issuer: "Oracle",
-      image: "https://placehold.co/600x400/2c0b0e/fa3e3e?text=Oracle+Multicloud+Cert" 
+      image: "/certifications/OCI-multicloud.jpg" 
+    },
+    { 
+      name: "Oracle Cloud Infrastructure 2025 Certified Foundations Associate", 
+      date: "Sep 2025", 
+      issuer: "Oracle",
+      image: "/certifications/OCI-Foundations.jpg" 
     },
     { 
       name: "Google Cloud Certified - Associate Cloud Engineer", 
       date: "May 2025", 
       issuer: "Google",
-      image: "https://placehold.co/600x400/0f172a/3b82f6?text=GCP+Associate+Cert"
+      image: "/certifications/Google.jpg"
     },
     { 
       name: "Alibaba Cloud Certified Associate - Cloud Computing", 
       date: "Feb 2024", 
       issuer: "Alibaba",
-      image: "https://placehold.co/600x400/1c1917/f97316?text=Alibaba+Cloud+Computing"
+      image: "/certifications/ACA-Cloud.jpg"
     },
     { 
       name: "Alibaba Cloud Certified Associate - Big Data", 
       date: "May 2024", 
       issuer: "Alibaba",
-      image: "https://placehold.co/600x400/1c1917/f97316?text=Alibaba+Big+Data"
+      image: "/certifications/ACA-Big-Data.jpg"
     },
     { 
-      name: "Alibaba Cloud Certified Associate - Cloud Database", 
+      name: "Alibaba Cloud Certified Associate - Database", 
       date: "Aug 2024", 
       issuer: "Alibaba",
-      image: "https://placehold.co/600x400/1c1917/f97316?text=Alibaba+Database"
+      image: "/certifications/ACA-Database.png"
     },
     { 
       name: "Huawei Certified ICT Associate - Cloud Service", 
       date: "Dec 2023", 
       issuer: "Huawei",
-      image: "https://placehold.co/600x400/270a0a/ef4444?text=Huawei+HCIA+Cloud"
+      image: "/certifications/Huawei.jpg"
     }
   ],
   projects: [
     {
-      title: "Egglyze AI System",
-      category: "IoT + Cloud Computing",
-      description: "A real-time egg quality prediction system designed for industrial scale. Engineered a Flask-based ML brain running on Google Compute Engine, utilizing Firestore for sub-second data syncing.",
-      tech: ["GCP Compute", "Python Flask", "Firestore"],
-      gradient: "from-blue-600 to-cyan-500",
-      link: "https://github.com/albert4183r7"
+      title: "PromptBill - AI Powered Full-Stack SaaS Application",
+      category: "GenAI + Full-Stack",
+      description: "Automating financial workflows. A smart SaaS platform that leverages Generative AI to draft, format, and send professional invoices in seconds, wrapped in a sleek React dashboard.",
+      tech: ["React", "Node.js", "Express.js ","MongoDB", "Gemini API"],
+      gradient: "/projects-images/AI-Invoice.png",
+      link: "https://github.com/albert4183r7/ai-invoice-generator"
+      prod-live: "link"
     },
     {
-      title: "Global Cloud Architecture",
-      category: "High-Availability Infra",
+      title: "Egglyze - AI Egg Quality Classification via Shell Analysis System",
+      category: "Cloud Computing + Backend Development",
+      description: "A real-time egg quality prediction system designed for industrial scale. Engineered a Flask-based ML brain running on Google Compute Engine, utilizing Firestore for sub-second data syncing.",
+      tech: ["GCP Compute Engine", "Python Flask (API)", "GCP Firestore"],
+      gradient: "/projects-images/Egglyze.jpg",
+      link: "https://github.com/Capstone-Egglyze/Cloud-Computing"
+    },
+    {
+      title: "Global E-Commerce Cloud Architecture",
+      category: "Cloud Computing",
       description: "Multi-region E-Commerce architecture on GCP designed to withstand massive traffic spikes. Features auto-scaling Managed Instance Groups and Global Load Balancing that survived 200% CPU stress testing.",
-      tech: ["Google Cloud", "Terraform", "Auto-scaling"],
-      gradient: "from-indigo-600 to-blue-500",
+      tech: ["GCP", "auto-scaling", "load-balancing", "instance group", "cloud monitoring"],
+      gradient: "/projects-images/GCP-Cloud.png",
       link: "https://github.com/albert4183r7/gcp-global-ecommerce-architecture"
     },
     {
-      title: "AI Invoice Generator",
-      category: "SaaS Application",
-      description: "Automating financial workflows. A smart SaaS platform that leverages Generative AI to draft, format, and send professional invoices in seconds, wrapped in a sleek React dashboard.",
-      tech: ["React", "Node.js", "OpenAI API"],
-      gradient: "from-violet-600 to-indigo-500",
-      link: "https://github.com/albert4183r7/ai-invoice-generator"
+      title: "Cloud-Based Student Data Management System (AWS)",
+      category: "CRUD API + Cloud Computing",
+      description: "A full-stack CRUD prototype deployed on AWS to demonstrate core cloud architecture patterns and backend API integration.",
+      tech: ["React", "Java", "AWS EC2", "AWS RDS", "AWS S3", "AWS Route 53"],
+      gradient: "/projects-images/AWS-Cloud.png",
+      link: "https://github.com/albert4183r7/Cloud-Based-Student-Data-Management-System"
+      demo: "a video, remove the audio"
     }
-  ],
-  experience: [
-    { company: "PT. ZTE Indonesia", role: "Service Delivery Engineer Intern", period: "Jul 2024 — Oct 2024", description: "Managed critical data center infrastructure (BMS). Solved complex connectivity puzzles using VLAN segmentation and CLI configuration, ensuring 99.9% monitoring uptime." },
-    { company: "Bangkit Academy", role: "Cloud Computing Cohort", period: "Feb 2024 — Dec 2024", description: "Selected as a top-tier cohort member. Led the cloud architecture for a capstone project, mastering containerization and microservices deployment on GCP." },
-    { company: "Institut Teknologi Bandung", role: "B.S. Telecommunication Engineering", period: "Aug 2021 — Jul 2025", description: "Thesis on V2V (Vehicle-to-Vehicle) communication optimization using Deep Reinforcement Learning. GPA: 3.67/4.00." }
   ]
 };

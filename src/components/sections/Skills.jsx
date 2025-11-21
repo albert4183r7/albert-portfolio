@@ -35,8 +35,8 @@ const Skills = () => {
   return (
     <section id="skills" className="py-24 relative z-10 border-y border-white/5 bg-black/50 backdrop-blur-sm overflow-hidden">
       <div className="text-center mb-16">
-        <h2 className="text-3xl font-bold text-white mb-2">Technical Stack</h2>
-        <p className="text-zinc-400 text-sm">The comprehensive toolkit I use to deliver reliable solutions.</p>
+        <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">Technical Stack</h2>
+        <p className="text-zinc-400 max-w-2xl mx-auto text-lg">The toolkit I use to deliver solutions.</p>
       </div>
 
       <div className="space-y-4">

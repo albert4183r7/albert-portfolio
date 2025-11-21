@@ -11,7 +11,7 @@ const Projects = () => {
         <div className="text-center mb-24">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">Projects</h2>
           <p className="text-zinc-400 max-w-2xl mx-auto text-lg">
-            Selected works demonstrating enterprise-grade IT solutions.
+            Selected works demonstrating production-ready IT solutions.
           </p>
         </div>
 
