@@ -1,11 +1,59 @@
-import React from 'react';
-import { ArrowUpRight, Download, Github, Linkedin } from 'lucide-react';
+import React, { useState } from 'react';
+import { ArrowUpRight, Download, Github, Linkedin, X, Eye } from 'lucide-react';
 import { CONTENT } from '../../utils/content';
 import { useParallax } from '../../hooks/useParallax';
 import { useTypewriter } from '../../hooks/useTypewriter';
 import MagneticButton from '../ui/MagneticButton';
 
+const CVPreviewModal = ({ isOpen, onClose, cvLink }) => {
+  if (!isOpen) return null;
+
+  return (
+    <div className="fixed inset-0 z-[9999] flex items-center justify-center p-4 bg-black/95 backdrop-blur-xl animate-fade-in" onClick={onClose}>
+      <div className="relative w-full max-w-5xl h-[85vh] bg-zinc-900 rounded-2xl overflow-hidden border border-white/10 shadow-2xl flex flex-col" onClick={e => e.stopPropagation()}>
+        
+        {/* Header */}
+        <div className="flex items-center justify-between p-4 border-b border-white/10 bg-zinc-950">
+          <h3 className="text-white font-bold flex items-center gap-2">
+            <Eye size={18} className="text-blue-500"/> CV Preview
+          </h3>
+          <div className="flex gap-2">
+            <a 
+              href={cvLink} 
+              download 
+              className="flex items-center gap-2 px-4 py-2 text-sm font-bold text-black bg-white rounded-lg hover:bg-zinc-200 transition-colors"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <Download size={16} /> Download PDF
+            </a>
+            <button 
+              onClick={onClose} 
+              className="p-2 text-zinc-400 hover:text-white bg-white/5 rounded-lg hover:bg-white/10 transition-colors border border-white/5"
+            >
+              <X size={20} />
+            </button>
+          </div>
+        </div>
+
+        {/* PDF Preview */}
+        <div className="flex-1 bg-zinc-800 relative">
+          <iframe 
+            src={cvLink} 
+            className="w-full h-full" 
+            title="CV Preview"
+          />
+          {/* Fallback for loading state or if iframe has issues */}
+          <div className="absolute inset-0 -z-10 flex items-center justify-center text-zinc-500">
+             <p>Loading Preview...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
 const Hero = () => {
+  const [showCV, setShowCV] = useState(false);
   const offset = useParallax(25);
   const headline = useTypewriter(" Aspiring Cloud & Backend\nEngineer.", 35, 200);
 
@@ -38,13 +86,13 @@ const Hero = () => {
                Contact Me <ArrowUpRight size={18} className="group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition-transform" />
              </MagneticButton>
              
-             <a 
-               href={CONTENT.cvLink} 
-               download 
-               className="px-6 py-4 rounded-xl bg-zinc-900 border border-white/10 text-zinc-300 hover:text-white hover:bg-zinc-800 hover:border-white/30 transition-all flex items-center gap-2"
+             {/* Updated Button to trigger Modal */}
+             <button 
+               onClick={() => setShowCV(true)}
+               className="px-6 py-4 rounded-xl bg-zinc-900 border border-white/10 text-zinc-300 hover:text-white hover:bg-zinc-800 hover:border-white/30 transition-all flex items-center gap-2 cursor-pointer"
              >
                <Download size={18} /> Download CV
-             </a>
+             </button>
           </div>
           
           <div className="flex gap-4 pt-2">
@@ -74,6 +122,13 @@ const Hero = () => {
            </div>
         </div>
       </div>
+
+      {/* CV Preview Modal */}
+      <CVPreviewModal 
+        isOpen={showCV} 
+        onClose={() => setShowCV(false)} 
+        cvLink={CONTENT.cvLink} 
+      />
     </section>
   );
 };
