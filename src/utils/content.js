@@ -2,7 +2,7 @@ import { Cloud, Server, Layers, ShieldCheck, Code2, Terminal, Database, Globe, L
 
 export const CONTENT = {
   name: "ALBERT",
-  role: "Aspiring Cloud & Backend Engineer", // Fixed typo
+  role: "Aspiring Cloud & Backend Engineer",
   location: "Medan, Indonesia",
   availability: "Open to Work",
   email: "albertlie8338@gmail.com",
@@ -15,11 +15,12 @@ export const CONTENT = {
   skills: {
     // Row 1: Languages & Frameworks
     languages: [
+      { name: "Go (Golang)", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg" }, // Added Go since it's key for your new project
       { name: "Python", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
       { name: "JavaScript", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
       { name: "TypeScript", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" },
       { name: "Express.js", url: "https://www.vectorlogo.zone/logos/expressjs/expressjs-icon.svg"},
-      { name: "node.js", url: "https://www.vectorlogo.zone/logos/nodejs/nodejs-ar21.svg" },
+      { name: "Node.js", url: "https://www.vectorlogo.zone/logos/nodejs/nodejs-ar21.svg" },
       { name: "React", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
       { name: "Tailwind CSS", url: "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg" },
       { name: "HTML5", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" },
@@ -40,14 +41,13 @@ export const CONTENT = {
       { name: "Docker", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" },
       { name: "Kubernetes", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" },
       { name: "Terraform", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg" },
-      { name: "Jenkins", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg" },
+      { name: "Redis", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" }, // Added Redis
+      { name: "RabbitMQ", url: "https://www.vectorlogo.zone/logos/rabbitmq/rabbitmq-icon.svg" }, // Added RabbitMQ
       { name: "Git", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
       { name: "GitHub", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"},
-      { name: "VS Code", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" },
       { name: "PostgreSQL", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" },
       { name: "MySQL", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" },
       { name: "MongoDB", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" },
-      { name: "Supabase", url: "https://tse1.mm.bing.net/th/id/OIP.CezBRofmUe0x3BRZnriswgHaFj?pid=Api&P=0&h=220" },
       { name: "Postman", url: "https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" },
     ]
   },
@@ -96,6 +96,15 @@ export const CONTENT = {
     }
   ],
   projects: [
+    {
+      title: "Flash Sale Backend Engine",
+      category: "Microservices + Distributed Systems",
+      description: "A high-concurrency backend system built with Go. Features the Cache-Aside pattern for scalable auth, atomic Redis Lua scripts for inventory locking, and RabbitMQ for asynchronous order processing to handle massive traffic spikes.",
+      tech: ["Go (Golang)", "Gin", "Redis", "RabbitMQ", "PostgreSQL", "Docker"],
+      image: "/projects-images/flash-sale-diagram.png",
+      link: "https://github.com/albert4183r7/Flash-Sale-Engine",
+      gradient: "from-amber-500 to-orange-600"
+    },
     {
       title: "PromptBill - AI Powered Full-Stack SaaS Application",
       category: "GenAI + Full-Stack",
